@@ -1,0 +1,127 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('/img/simsum.png');
+    /* Sesuaikan dengan lokasi dan nama file gambar */
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar {
+    width: 200px;
+    /* Lebar sidebar dipersempit */
+    background-color: #dc3545;
+    /* Warna merah untuk sidebar */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto 20px;
+    /* Logo terpusat dan memiliki margin bawah */
+    height: 100px;
+    /* Ubah ukuran logo sesuai kebutuhan */
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.sidebar a:hover {
+    background-color: #c82333;
+}
+
+.container {
+    margin-left: 220px;
+    /* Pindahkan konten utama ke kanan untuk memberi ruang pada sidebar */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Buat latar belakang container sedikit transparan */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.table {
+    background-color: white;
+    /* Kembalikan background putih untuk tabel */
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    background-color: white;
+    /* Tambahkan background putih untuk sel tabel */
+}
+
+.table th {
+    background-color: #f8f8f8;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.table thead th {
+    border-bottom: 2px solid #ddd;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary,
+.btn-info,
+.btn-warning,
+.btn-danger {
+    margin-right: 5px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.form-check label {
+    flex: 1;
+}
+
+.form-check input[type="number"] {
+    width: 80px;
+    margin-left: 10px;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
